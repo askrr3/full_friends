@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<!-- {% if query %}
+    {% for num in query %}
+        {{ num.id }} <br/>
+    {% endfor %}
+{% endif %} -->
+
+	<form action='/friends/{{id}}' method = 'POST'>
+		First Name:<input type="text" value ='{{friend[0]["first_name"]}}' name="first_name" id="first_name">
+		
+		Last Name:<input type="text" value ='{{friend[0]["last_name"]}}' name="last_name" id="last_name">
+
+		<input type = 'submit' value = 'update'>
+	</form>
+
+
+</body>
+</html>
